@@ -7,20 +7,31 @@
 //
 
 #import "AppDelegate.h"
-
+#import <HealthKit/HealthKit.h>
+#import "TabBarController.h"
+#import "NavigationViewController.h"
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
-
+@implementation AppDelegate{
+    HKHealthStore *healthStore;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    [self healthKit];
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+        return YES;
 }
 
-
+void uncaughtExceptionHandler(NSException *exception) {
+    
+    NSLog(@"reason: %@", exception);
+    
+    // Internal error reporting
+    
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -94,5 +105,41 @@
         abort();
     }
 }
-
+#pragma healthKit
+-(void)healthKit{
+    healthStore = [[HKHealthStore alloc]init];
+    //为每个控制器设置healthStore
+    TabBarController *tabBarController = (TabBarController *)self.window.rootViewController;
+    for (NavigationViewController *nav in tabBarController.viewControllers) {
+        if ([nav respondsToSelector:@selector(setHealthStore:)]) {
+            [nav setHealthStore:healthStore];
+        }
+    }
+    //请求[HKHealthStore授权
+    if ([HKHealthStore isHealthDataAvailable]) {
+        [healthStore requestAuthorizationToShareTypes:[self writeHealthTypes] readTypes:[self readHealthTypes] completion:^(BOOL success, NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"healthStore error %@",error);
+            }else if (success){
+                NSLog(@"healthStore success");
+            }
+        }];
+    }
+    
+}
+//要写的属性
+-(NSSet *)writeHealthTypes{
+    HKQuantityType *heightType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeight];
+    HKQuantityType *bodyMassType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass];
+    HKQuantityType *bodyTemperatureType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyTemperature];
+    return [NSSet setWithArray:@[heightType,bodyMassType,bodyTemperatureType]];
+}
+//要读的属性
+-(NSSet *)readHealthTypes{
+    HKQuantityType *heightType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeight];
+    HKQuantityType *bodyMassType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass];
+    HKQuantityType *bodyTemperatureType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyTemperature];
+    HKCharacteristicType *dateOfBirthType = [HKObjectType characteristicTypeForIdentifier:HKCharacteristicTypeIdentifierDateOfBirth];
+    return [NSSet setWithArray:@[heightType,bodyMassType,bodyTemperatureType,dateOfBirthType]];
+}
 @end

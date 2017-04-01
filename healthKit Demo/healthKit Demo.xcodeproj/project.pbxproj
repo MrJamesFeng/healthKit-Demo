@@ -16,6 +16,22 @@
 		0B0356DA1E8E32DF00C6F87E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B0356D81E8E32DF00C6F87E /* LaunchScreen.storyboard */; };
 		0B0356E51E8E32DF00C6F87E /* healthKit_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0356E41E8E32DF00C6F87E /* healthKit_DemoTests.m */; };
 		0B0356F01E8E32DF00C6F87E /* healthKit_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0356EF1E8E32DF00C6F87E /* healthKit_DemoUITests.m */; };
+		0B0356FF1E8E34F100C6F87E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0356FE1E8E34F100C6F87E /* HealthKit.framework */; };
+		0B0357081E8E387C00C6F87E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0357071E8E387C00C6F87E /* NavigationViewController.m */; };
+		0B0357091E8E387C00C6F87E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0357071E8E387C00C6F87E /* NavigationViewController.m */; };
+		0B03570A1E8E387C00C6F87E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0357071E8E387C00C6F87E /* NavigationViewController.m */; };
+		0B03570D1E8E38E000C6F87E /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B03570C1E8E38E000C6F87E /* TabBarController.m */; };
+		0B03570E1E8E38E000C6F87E /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B03570C1E8E38E000C6F87E /* TabBarController.m */; };
+		0B03570F1E8E38E000C6F87E /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B03570C1E8E38E000C6F87E /* TabBarController.m */; };
+		0BFFB20B1E8E576300FA667D /* HealthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB2061E8E576300FA667D /* HealthManager.m */; };
+		0BFFB20C1E8E576300FA667D /* HealthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB2061E8E576300FA667D /* HealthManager.m */; };
+		0BFFB20D1E8E576300FA667D /* HealthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB2061E8E576300FA667D /* HealthManager.m */; };
+		0BFFB20E1E8E576400FA667D /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB2081E8E576300FA667D /* HKHealthStore+AAPLExtensions.m */; };
+		0BFFB20F1E8E576400FA667D /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB2081E8E576300FA667D /* HKHealthStore+AAPLExtensions.m */; };
+		0BFFB2101E8E576400FA667D /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB2081E8E576300FA667D /* HKHealthStore+AAPLExtensions.m */; };
+		0BFFB2111E8E576400FA667D /* RunObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB20A1E8E576300FA667D /* RunObject.m */; };
+		0BFFB2121E8E576400FA667D /* RunObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB20A1E8E576300FA667D /* RunObject.m */; };
+		0BFFB2131E8E576400FA667D /* RunObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFFB20A1E8E576300FA667D /* RunObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +69,18 @@
 		0B0356EB1E8E32DF00C6F87E /* healthKit DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "healthKit DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B0356EF1E8E32DF00C6F87E /* healthKit_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = healthKit_DemoUITests.m; sourceTree = "<group>"; };
 		0B0356F11E8E32DF00C6F87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B0356FE1E8E34F100C6F87E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0B0357001E8E34F100C6F87E /* healthKit Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "healthKit Demo.entitlements"; sourceTree = "<group>"; };
+		0B0357061E8E387C00C6F87E /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		0B0357071E8E387C00C6F87E /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		0B03570B1E8E38E000C6F87E /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		0B03570C1E8E38E000C6F87E /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		0BFFB2051E8E576300FA667D /* HealthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthManager.h; sourceTree = "<group>"; };
+		0BFFB2061E8E576300FA667D /* HealthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthManager.m; sourceTree = "<group>"; };
+		0BFFB2071E8E576300FA667D /* HKHealthStore+AAPLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKHealthStore+AAPLExtensions.h"; sourceTree = "<group>"; };
+		0BFFB2081E8E576300FA667D /* HKHealthStore+AAPLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HKHealthStore+AAPLExtensions.m"; sourceTree = "<group>"; };
+		0BFFB2091E8E576300FA667D /* RunObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunObject.h; sourceTree = "<group>"; };
+		0BFFB20A1E8E576300FA667D /* RunObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0356FF1E8E34F100C6F87E /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +116,7 @@
 				0B0356E31E8E32DF00C6F87E /* healthKit DemoTests */,
 				0B0356EE1E8E32DF00C6F87E /* healthKit DemoUITests */,
 				0B0356C51E8E32DF00C6F87E /* Products */,
+				0B0356FD1E8E34F100C6F87E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +133,8 @@
 		0B0356C61E8E32DF00C6F87E /* healthKit Demo */ = {
 			isa = PBXGroup;
 			children = (
+				0BFFB2031E8E575500FA667D /* libs */,
+				0B0357001E8E34F100C6F87E /* healthKit Demo.entitlements */,
 				0B0356CA1E8E32DF00C6F87E /* AppDelegate.h */,
 				0B0356CB1E8E32DF00C6F87E /* AppDelegate.m */,
 				0B0356CD1E8E32DF00C6F87E /* ViewController.h */,
@@ -113,6 +145,10 @@
 				0B0356DB1E8E32DF00C6F87E /* Info.plist */,
 				0B0356D31E8E32DF00C6F87E /* healthKit_Demo.xcdatamodeld */,
 				0B0356C71E8E32DF00C6F87E /* Supporting Files */,
+				0B0357061E8E387C00C6F87E /* NavigationViewController.h */,
+				0B0357071E8E387C00C6F87E /* NavigationViewController.m */,
+				0B03570B1E8E38E000C6F87E /* TabBarController.h */,
+				0B03570C1E8E38E000C6F87E /* TabBarController.m */,
 			);
 			path = "healthKit Demo";
 			sourceTree = "<group>";
@@ -141,6 +177,35 @@
 				0B0356F11E8E32DF00C6F87E /* Info.plist */,
 			);
 			path = "healthKit DemoUITests";
+			sourceTree = "<group>";
+		};
+		0B0356FD1E8E34F100C6F87E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B0356FE1E8E34F100C6F87E /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BFFB2031E8E575500FA667D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				0BFFB2041E8E576300FA667D /* RunObject */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		0BFFB2041E8E576300FA667D /* RunObject */ = {
+			isa = PBXGroup;
+			children = (
+				0BFFB2051E8E576300FA667D /* HealthManager.h */,
+				0BFFB2061E8E576300FA667D /* HealthManager.m */,
+				0BFFB2071E8E576300FA667D /* HKHealthStore+AAPLExtensions.h */,
+				0BFFB2081E8E576300FA667D /* HKHealthStore+AAPLExtensions.m */,
+				0BFFB2091E8E576300FA667D /* RunObject.h */,
+				0BFFB20A1E8E576300FA667D /* RunObject.m */,
+			);
+			path = RunObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +277,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2PG34PH6C8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					0B0356DF1E8E32DF00C6F87E = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -279,10 +349,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFFB20E1E8E576400FA667D /* HKHealthStore+AAPLExtensions.m in Sources */,
 				0B0356CF1E8E32DF00C6F87E /* ViewController.m in Sources */,
 				0B0356D51E8E32DF00C6F87E /* healthKit_Demo.xcdatamodeld in Sources */,
+				0B0357081E8E387C00C6F87E /* NavigationViewController.m in Sources */,
+				0B03570D1E8E38E000C6F87E /* TabBarController.m in Sources */,
 				0B0356CC1E8E32DF00C6F87E /* AppDelegate.m in Sources */,
+				0BFFB2111E8E576400FA667D /* RunObject.m in Sources */,
 				0B0356C91E8E32DF00C6F87E /* main.m in Sources */,
+				0BFFB20B1E8E576300FA667D /* HealthManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFFB2121E8E576400FA667D /* RunObject.m in Sources */,
+				0BFFB20F1E8E576400FA667D /* HKHealthStore+AAPLExtensions.m in Sources */,
+				0B03570E1E8E38E000C6F87E /* TabBarController.m in Sources */,
 				0B0356E51E8E32DF00C6F87E /* healthKit_DemoTests.m in Sources */,
+				0B0357091E8E387C00C6F87E /* NavigationViewController.m in Sources */,
+				0BFFB20C1E8E576300FA667D /* HealthManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +378,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFFB2131E8E576400FA667D /* RunObject.m in Sources */,
+				0BFFB2101E8E576400FA667D /* HKHealthStore+AAPLExtensions.m in Sources */,
+				0B03570F1E8E38E000C6F87E /* TabBarController.m in Sources */,
 				0B0356F01E8E32DF00C6F87E /* healthKit_DemoUITests.m in Sources */,
+				0B03570A1E8E387C00C6F87E /* NavigationViewController.m in Sources */,
+				0BFFB20D1E8E576300FA667D /* HealthManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "healthKit Demo/healthKit Demo.entitlements";
 				DEVELOPMENT_TEAM = 2PG34PH6C8;
 				INFOPLIST_FILE = "healthKit Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -443,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "healthKit Demo/healthKit Demo.entitlements";
 				DEVELOPMENT_TEAM = 2PG34PH6C8;
 				INFOPLIST_FILE = "healthKit Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -520,6 +607,7 @@
 				0B0356F61E8E32DF00C6F87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B0356F71E8E32DF00C6F87E /* Build configuration list for PBXNativeTarget "healthKit DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +616,7 @@
 				0B0356F91E8E32DF00C6F87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B0356FA1E8E32DF00C6F87E /* Build configuration list for PBXNativeTarget "healthKit DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +625,7 @@
 				0B0356FC1E8E32DF00C6F87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
