@@ -136,6 +136,14 @@ void uncaughtExceptionHandler(NSException *exception) {
 }
 //要读的属性
 -(NSSet *)readHealthTypes{
+//    HKCategoryType
+//    HKObjectType
+//    HKWorkoutType
+//    HKDocumentType
+//    HKCorrelationType
+//    HKSampleType
+    HKCharacteristicType
+    
     HKQuantityType *heightType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeight];
     HKQuantityType *bodyMassType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass];
     HKQuantityType *bodyTemperatureType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyTemperature];

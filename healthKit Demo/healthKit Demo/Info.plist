@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSHealthUpdateUsageDescription</key>
-	<string>健康数据更新？</string>
+	<string>更新健康数据？</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>分享健康数据？</string>
 	<key>CFBundleDevelopmentRegion</key>
